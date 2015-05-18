@@ -1,12 +1,12 @@
 ---
 # Configuration sample file for Jingo (YAML)
 application:
-  title: Jingo
+  title: '卓耳游戏Wiki'
   repository: '.'
   docSubdir: ''
   remote: 'origin'
   pushInterval: 30
-  secret: change me
+  secret: drow-games-private
   git: git
   skipGitCheck: false
   loggingMode: 1
@@ -18,11 +18,11 @@ authentication:
     clientId: replace me with the real value
     clientSecret: replace me with the real value
   github:
-    enabled: false
-    clientId: replace me with the real value
-    clientSecret: replace me with the real value
-  alone:
     enabled: true
+    clientId: b1db203a51e5a85025ab
+    clientSecret: 45ee07e5d5e45f95a7da2acad36926c976530c93
+  alone:
+    enabled: false
     username: 'Drow'
     passwordHash: 'bce5e223cca0e3f2601bf8e22be58c1a4e6b8d8a'
     email: ''
@@ -30,7 +30,7 @@ features:
   markitup: false
   codemirror: true
 server:
-  hostname: localhost
+  hostname: svn.drow-games.com
   port: 6067
   localOnly: false
   baseUrl: ''
