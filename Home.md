@@ -7,3 +7,5 @@
 # 重要概念
 * [[状态机定义]]
 * [[Action总体说明]]
+
+[1] https://github.com/claudioc/jingo
