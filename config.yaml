@@ -1,0 +1,53 @@
+---
+# Configuration sample file for Jingo (YAML)
+application:
+  title: Jingo
+  repository: '.'
+  docSubdir: ''
+  remote: 'origin'
+  pushInterval: 30
+  secret: change me
+  git: git
+  skipGitCheck: false
+  loggingMode: 1
+  pedanticMarkdown: true
+  staticWhitelist: "/\\.png$/i, /\\.jpg$/i, /\\.gif$/i"
+authentication:
+  google:
+    enabled: false
+    clientId: replace me with the real value
+    clientSecret: replace me with the real value
+  github:
+    enabled: false
+    clientId: replace me with the real value
+    clientSecret: replace me with the real value
+  alone:
+    enabled: true
+    username: 'Drow'
+    passwordHash: 'bce5e223cca0e3f2601bf8e22be58c1a4e6b8d8a'
+    email: ''
+features:
+  markitup: false
+  codemirror: true
+server:
+  hostname: localhost
+  port: 6067
+  localOnly: false
+  baseUrl: ''
+authorization:
+  anonRead: true
+  validMatches: .+
+pages:
+  index: Home
+  title:
+    fromFilename: true
+    fromContent: false
+    asciiOnly: false
+    lowercase: false
+  itemsPerPage: 10
+customizations:
+  sidebar: _sidebar.md
+  footer: _footer.md
+  style: _style.css
+  script: _script.js
+
