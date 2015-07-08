@@ -25,3 +25,17 @@ phases: [ Menu ]
 此文件FlightCli\game目录下
 应该是两个文件，一个是vc工程使用，一个是xcode使用
 当编辑该文件时，需要修改两个文件，将内容添加进去。
+
+symbols.vc.def内添加的内容为：
+<code>
+Page类名称_app_init
+Page类名称_app_fini
+</code>
+
+symbols.def内添加的内容为：
+<code>
+_Page类名称_app_init
+_Page类名称_app_fini
+</code>
+
+symbols.def
