@@ -5,7 +5,7 @@ Page即单个功能界面，比如充值界面。
 每个Page必须包含以下内容
 1. Page类
 1. UI资源
-1. 关联配置
+1. 关联配置（名称必须和Page类相同）
 
 对应的目录为：
 1. FlightCli\game\UI\Menu\
