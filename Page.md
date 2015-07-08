@@ -16,3 +16,5 @@ Page即单个功能界面，比如充值界面。
 1. 类：MenuRechargePage.cpp
 1. UI资源：Recharge.lay
 1. 关联配置：MenuRechargePage.yml
+
+UI资源必须使用REditor来编辑，具体信息见 [[UI工具]]
