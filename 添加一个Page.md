@@ -12,8 +12,7 @@
 关联配置为Page类与UI资源相关联的配置文件。
 
 示例代码：
-<code>
-load-from: Ui/Menu/Shop.lay.bin
+<code>load-from: Ui/Menu/Shop.lay.bin
 phases: [ Menu ]
 </code>
 
@@ -27,14 +26,12 @@ phases: [ Menu ]
 当编辑该文件时，需要修改两个文件，将内容添加进去。
 
 symbols.vc.def内添加的内容为：
-<code>
-Page类名称_app_init
+<code>Page类名称_app_init
 Page类名称_app_fini
 </code>
 
 symbols.def内添加的内容为：
-<code>
-_Page类名称_app_init
+<code>_Page类名称_app_init
 _Page类名称_app_fini
 </code>
 
