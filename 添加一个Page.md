@@ -12,9 +12,8 @@
 关联配置为Page类与UI资源相关联的配置文件。
 
 示例代码：
-<code>load-from: Ui/Menu/Shop.lay.bin
-phases: [ Menu ]
-</code>
+	load-from: Ui/Menu/Shop.lay.bin
+	phases: [ Menu ]
 
 一般关联文件内容都为两行。
 1. 第一行为所需UI资源的路径及名称。为.bin是因为资源在执行打包脚本后为.bin文件。
@@ -26,13 +25,9 @@ phases: [ Menu ]
 当编辑该文件时，需要修改两个文件，将内容添加进去。
 
 symbols.vc.def内添加的内容为：
-<code>Page类名称_app_init
-Page类名称_app_fini
-</code>
+	Page类名称_app_init
+	Page类名称_app_fini
 
 symbols.def内添加的内容为：
-<code>_Page类名称_app_init
-_Page类名称_app_fini
-</code>
-
-symbols.def
+	_Page类名称_app_init
+	_Page类名称_app_fini
