@@ -12,8 +12,8 @@
 关联配置为Page类与UI资源相关联的配置文件。
 
 示例代码：
-    load-from: Ui/Menu/Shop.lay.bin
-    phases: [ Menu ]
+	load-from: Ui/Menu/Shop.lay.bin
+	phases: [ Menu ]
 
 一般关联文件内容都为两行。
 1. 第一行为所需UI资源的路径及名称。为.bin是因为资源在执行打包脚本后为.bin文件。
