@@ -333,3 +333,11 @@ page内如果存在通用的button需要绑定，其绑定位置可以写入init
    ``` 
    每个button均需要定义，同创建obj的方式相同，创建一个button的obj，之后定义其down和up内容，需要注意的是在spine中不同绑定同名的控件，也就是UI中需要绑定的控件名字不能相同。
    skin表示UI_button_common_b.spine中button的名字
+   ##另一种Spine-UI绑定方式
+   还有一种使用比较久的绑定方式（目前尽量不适用），是一种即时的绑定方式，不需要创建obj
+              - ui-play-anim:
+                  life-circle: endless
+                  control: MenuBuySkillPointPage.Spine_panel
+                  back_res: 'Ui/Spine/Menu/UI_frame_common_S.spine#idle_1'
+                  
+只需设置生存周期、要绑定的UI以及需要的spine资源即可（入场动画是appear_1*1，*1表示显示一次），但是此绑定方式对于page内的其他控件无效。
