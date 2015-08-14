@@ -1,9 +1,9 @@
 ## 拉取项目代码
 
 从远程版本库拉取代码，使用git clone命令，具体格式：
-
+```code
 	git clone url
-    
+```
 但这种方式速度较慢，所以我们一般拷贝一个.git的压缩包到本机解压，然后
 
 在.git文件夹所在的目录执行
@@ -27,7 +27,7 @@
 	FlightRes
 
 依次执行以下命令以获取完整工作区代码和资源：
-
+```code
     git checkout .
     git submodule update drow
     git submodule update Game_Flight
@@ -36,7 +36,7 @@
     git submodule update FlightRes
     cd FlightRes
     git reset --hard
-
+```
 
 ## 更新代码/资源
 
