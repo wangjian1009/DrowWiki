@@ -10,7 +10,8 @@ popup是一种用于window中弹出所需window的方法，具体方式为向给
                 .add_action("cancel",*this,&BattlePage::doBuyBombCancel)
                 .show();
 ```
-上例中以buy-conform这个page为基本，向page发送了buf这样的信息，使之显示在page中，并设定了两个按键“确定”和“取消”，使之关联相应的函数doBuyBombOk和doBuyBombCancel。除了show()函数外以上的每个函数均返回一个Drown::Popup &RGUIWindow的对象
+上例中以buy-conform这个page为基本，位置在FlightRes\flight_res\runtime\ui\popups中
+向page发送了buf这样的信息，使之显示在page中，并设定了两个按键“确定”和“取消”，使之关联相应的函数doBuyBombOk和doBuyBombCancel。除了show()函数外以上的每个函数均返回一个Drown::Popup &RGUIWindow的对象
 buf的获得使用了函数：
 ```javascript
 appendTipMessage(buf, sizeof(buf), COMMONSTRING_BUY_CONFIRM_BOMB，(uint32_t)gamedata->pveBombCost());
