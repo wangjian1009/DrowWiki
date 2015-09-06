@@ -33,6 +33,7 @@
 1. [[Page]]
 1. [[UI工具]]
 1. [[Spine UI]]
+1. [[pop up]]
 
 #### Actions
 1. [[Actions说明]]
