@@ -27,8 +27,8 @@
 1. 匹配通过Slot的名字进行，Slot所属骨骼的名字没有关系
 
 ##### 相关Action
-1. Spine骨骼绑定Part [spine-bind-part](/Spine-Actions)
-1. Particle的发射器接收Part控制 [particle-emitter-bind-part](/Particle-Actions)
+1. Spine骨骼绑定Part [spine-bind-part](/wiki/Spine-Actions)
+1. Particle的发射器接收Part控制 [particle-emitter-bind-part](/wiki/Particle-Actions)
 
 ---------------------------------------
 # Spine定义碰撞框
