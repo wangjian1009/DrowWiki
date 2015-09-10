@@ -6,3 +6,6 @@
 ##### spine-apply-transition
 ##### spine-set-state
 ##### spine-play-anim
+
+# Spine绑定碰撞框
+##### spine-with-collision
