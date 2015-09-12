@@ -18,9 +18,24 @@ authentication:
     clientId: replace me with the real value
     clientSecret: replace me with the real value
   github:
+    enabled: false
+    clientId: 45609ab6c06f44d0f50d
+    clientSecret: 3a7dc49fe8680cb28e40f02c8e07efebdf4ab015
+  local:
     enabled: true
-    clientId: b1db203a51e5a85025ab
-    clientSecret: 45ee07e5d5e45f95a7da2acad36926c976530c93
+    accounts:
+      - username: loki
+        passwordHash: a5b23f338648cb6f21e2cc1284e4d1b7b930ac97
+      - username: 孙帅
+        passwordHash: 48688a4df6a87861d396adb2e6c4948d6fdf98f0
+      - username: 王俊
+        passwordHash: 66f06499a5c83afdeef785fd2c41959f8f507061
+      - username: 殷飞飞
+        passwordHash: 451932a4e91c6f49438221784dc3ee5f5acb5bb5
+      - username: 李宁
+        passwordHash: c5f54c2602390af81af8fa56d49d06953abdb7e0
+      - username: 顾轶康
+        passwordHash: 1abb297d5dd4a68766892256c4300d8829ed05db
   alone:
     enabled: false
     username: 'Drow'
