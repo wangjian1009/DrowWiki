@@ -69,14 +69,10 @@ ubuntu上包括的包
 	这个默认设置只是在未登录时的界面语言，当用户登录后，默认语言还是英语，在My account里可以修改成其它语言。
 
 1. 启动WEB服务
-	\# ruby script/server webrick -e production
-	或
-    \# ruby /usr/local/redmine/script/server webrick -e production
+	\# ruby bin/rails server -e production -b '*'
 
 1. 服务方式启动
-	\# ruby script/server webrick -e production -d
-	或
-    \# ruby /usr/local/redmine/script/server webrick -e production –d
+	\# ruby bin/rails server -e production -b '*' -d
     
 1. 服务方式停止
 	（ps命令查出此进程的pid号，再杀掉，目前好像只能这样，我看了--help里面，还没有停止的参数。）
