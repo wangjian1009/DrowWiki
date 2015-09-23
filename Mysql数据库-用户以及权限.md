@@ -56,6 +56,9 @@
 -	**命令**
 	DROP USER 'username'@'host'; 
 
+# 查询所有用户列表
+-	**命令**
+	SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
 --------
 附表
 1. **ALTER**
