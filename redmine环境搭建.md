@@ -97,11 +97,8 @@ ubuntu上包括的包
 
 1. 卸载插件
 	1. 如果插件需要迁移，运行以下命令来降级数据库（安全起见，事先备份一下数据库）
-	Redmine 1.x:
-		rake db:migrate:plugin NAME=plugin_name VERSION=0 RAILS_ENV=production
-	Redmine 2.x:
-		rake redmine:plugins:migrate NAME=plugin_name VERSION=0 RAILS_ENV=production
-	1. 从插件目录#{RAILS_ROOT}/plugins (Redmine 2.x) or #{RAILS_ROOT}/vendor/plugins (Redmine 1.x)..删除插件
+			rake redmine:plugins:migrate NAME=plugin_name VERSION=0 RAILS_ENV=production
+	1. 从插件目录#{RAILS_ROOT}/plugins删除插件
 	1. 重启Redmine
 
 1. Redmine常用插件
