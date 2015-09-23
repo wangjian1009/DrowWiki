@@ -50,7 +50,7 @@ ubuntu上包括的包
 	encoding: utf8
 	:wq
     
-1. 创建mysql数据库
+1. 创建mysql数据库 [[Mysql数据库-用户以及权限]]
 	\# /usr/local/mysql/bin/mysql -u root -p
 	Mysql> create database redmine default character set utf8;
 	grant all on redmine.* to root;
