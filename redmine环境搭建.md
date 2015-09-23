@@ -83,3 +83,16 @@ ubuntu上包括的包
 	1. 停止web服务方法：在当前启动窗口按ctrl+C
 	1. 访问http://ip:3000/
 	1. 初始用户名/密码：admin/admin
+    
+1. Redmine常用插件
+	1. projects_tree_view插件，将项目按照父子关系，整理程属性结构
+	1. redmine_attach_screenshot上传截图插件
+	1. redmine_ckeditor ，redmine中的ckeditor插件，高级功能插件
+	1. redmine_ezlibrarian redmine中的图书、设备管理插件
+	1. redmine_importer redmine用户以及bug导入插件
+	1. redmine_code_review redmine的用户代码审查插件
+	1. timesheet_plugin 工时单插件，可以方便查看各个人的各个项目的工时情况
+	1. google_anayltics_plugin 支持第三方统计的插件，可用湿i用google或者其他插件
+	1. redmine_last_messages 显示论坛中最新发言或者回复的文件清单
+	1. ezfaq_plugin 支持faq功能
+	1. advanced_roadmap redmine高级路线图插件，可以方便的知道那个版本的实现时间的
