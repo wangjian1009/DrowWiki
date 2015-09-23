@@ -83,7 +83,27 @@ ubuntu上包括的包
 	1. 停止web服务方法：在当前启动窗口按ctrl+C
 	1. 访问http://ip:3000/
 	1. 初始用户名/密码：admin/admin
-    
+
+1. Redmine插件的安装
+	1. 把插件复制到 #{RAILS_ROOT}/plugins (Redmine 2.x) or #{RAILS_ROOT}/vendor/plugins (Redmine 1.x) 目录下面。如果你要从 Github 下载插件，你也可以直接进入插件目录，执行下面一条命令：
+		git clone git://github.com/user_name/name_of_the_plugin.git
+	1. 如果插件需要数据迁移，执行以下命令来升级你的数据库（安全起见，事先备份一下数据库）
+		Redmine 1.x:
+			rake db:migrate_plugins RAILS_ENV=production
+		Redmine 2.x:
+			rake redmine:plugins:migrate RAILS_ENV=production
+	1. 重启Redmine
+		现在你可以在插件列表（管理 -> 插件）中看到刚安装的插件，如果插件需要配置，在这里可以对新插件进行配置。
+
+1. 卸载插件
+	1. 如果插件需要迁移，运行以下命令来降级数据库（安全起见，事先备份一下数据库）
+	Redmine 1.x:
+		rake db:migrate:plugin NAME=plugin_name VERSION=0 RAILS_ENV=production
+	Redmine 2.x:
+		rake redmine:plugins:migrate NAME=plugin_name VERSION=0 RAILS_ENV=production
+	1. 从插件目录#{RAILS_ROOT}/plugins (Redmine 2.x) or #{RAILS_ROOT}/vendor/plugins (Redmine 1.x)..删除插件
+	1. 重启Redmine
+
 1. Redmine常用插件
 	[插件官方列表](http://www.redmine.org/projects/redmine/wiki/Plugin_list)
 	1. projects_tree_view插件，将项目按照父子关系，整理程属性结构
