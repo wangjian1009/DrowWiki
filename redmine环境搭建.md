@@ -102,7 +102,7 @@ ubuntu上包括的包
 	1. 重启Redmine
 
 1. Redmine常用插件
-	[插件官方列表](http://www.redmine.org/projects/redmine/wiki/Plugin_list)
+	[插件官方列表](http://www.redmine.org/plugins?page=1)
 	1. projects_tree_view插件，将项目按照父子关系，整理程属性结构
 	1. redmine_attach_screenshot上传截图插件
 	1. redmine_ckeditor ，redmine中的ckeditor插件，高级功能插件
