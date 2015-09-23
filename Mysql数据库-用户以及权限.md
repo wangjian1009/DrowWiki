@@ -56,31 +56,56 @@
 	DROP USER 'username'@'host'; 
 
 --------
-附表:在MySQL中的操作权限 
-
-ALTER	Allows use of ALTER TABLE.
-ALTER ROUTINE	Alters or drops stored routines.
-CREATE	Allows use of CREATE TABLE.
-CREATE ROUTINE	Creates stored routines.
-CREATE TEMPORARY TABLE	Allows use of CREATE TEMPORARY TABLE.
-CREATE USER	Allows use of CREATE USER, DROP USER, RENAME USER, and REVOKE ALL PRIVILEGES.
-CREATE VIEW	Allows use of CREATE VIEW.
-DELETE	Allows use of DELETE.
-DROP	Allows use of DROP TABLE.
-EXECUTE	Allows the user to run stored routines.
-FILE	Allows use of SELECT... INTO OUTFILE and LOAD DATA INFILE.
-INDEX	Allows use of CREATE INDEX and DROP INDEX.
-INSERT	Allows use of INSERT.
-LOCK TABLES	Allows use of LOCK TABLES on tables for which the user also has SELECT privileges.
-PROCESS	Allows use of SHOW FULL PROCESSLIST.
-RELOAD	Allows use of FLUSH.
-REPLICATION	Allows the user to ask where slave or master
-CLIENT	servers are.
-REPLICATION SLAVE	Needed for replication slaves.
-SELECT	Allows use of SELECT.
-SHOW DATABASES	Allows use of SHOW DATABASES.
-SHOW VIEW	Allows use of SHOW CREATE VIEW.
-SHUTDOWN	Allows use of mysqladmin shutdown.
-SUPER	Allows use of CHANGE MASTER, KILL, PURGE MASTER LOGS, and SET GLOBAL SQL statements. Allows mysqladmin debug command. Allows one extra connection to be made if maximum connections are reached.
-UPDATE	Allows use of UPDATE.
-USAGE	Allows connection without any specific privileges.
+附表
+1. **ALTER**
+Allows use of ALTER TABLE.
+1. **ALTER ROUTINE**
+Alters or drops stored routines.
+1. **CREATE**
+Allows use of CREATE TABLE.
+1. **CREATE ROUTINE**
+Creates stored routines.
+1. **CREATE TEMPORARY TABLE**
+Allows use of CREATE TEMPORARY TABLE.
+1. **CREATE USER**
+Allows use of CREATE USER, DROP USER, RENAME USER, and REVOKE ALL PRIVILEGES.
+1. **CREATE VIEW**
+Allows use of CREATE VIEW.
+1. **DELETE**
+Allows use of DELETE.
+1. **DROP**
+Allows use of DROP TABLE.
+1. **EXECUTE**
+Allows the user to run stored routines.
+1. **FILE**
+Allows use of SELECT... INTO OUTFILE and LOAD DATA INFILE.
+1. **INDEX**
+Allows use of CREATE INDEX and DROP INDEX.
+1. **INSERT**
+Allows use of INSERT.
+1. **LOCK TABLES**
+Allows use of LOCK TABLES on tables for which the user also has SELECT privileges.
+1. **PROCESS**
+Allows use of SHOW FULL PROCESSLIST.
+1. **RELOAD**
+Allows use of FLUSH.
+1. **REPLICATION**
+Allows the user to ask where slave or master
+1. **CLIENT**
+servers are.
+1. **REPLICATION SLAVE**
+Needed for replication slaves.
+1. **SELECT	Allows**
+use of SELECT.
+1. **SHOW DATABASES**
+Allows use of SHOW DATABASES.
+1. **SHOW VIEW**
+Allows use of SHOW CREATE VIEW.
+1. **SHUTDOWN**
+Allows use of mysqladmin shutdown.
+1. **SUPER**
+Allows use of CHANGE MASTER, KILL, PURGE MASTER LOGS, and SET GLOBAL SQL statements. Allows mysqladmin debug command. Allows one extra connection to be made if maximum connections are reached.
+1. **UPDATE**
+Allows use of UPDATE.
+1. **USAGE**
+Allows connection without any specific privileges.
