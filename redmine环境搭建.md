@@ -17,7 +17,10 @@
 
 1. Rake安装
 	\# gem install rake
-    
+
+1. Ruby on Rails
+	\# gem install rails
+
 1. 下载redmine
 	\# git clone https://github.com/redmine/redmine
     \# cd redmine
@@ -30,3 +33,57 @@
 	\# cd redmine
     \# bundle update
 如果有错误，根据错误提示安装依赖的系统包并重试这个过程
+ubuntu上包括的包
+	sudo apt-get install libmagickwand-dev
+	
+1. redmine数据库配置
+	\# cd redmine/config
+    \# #设置数据库参数
+	\# cp database.yml.example database.yml
+	\# vi database.yml
+	production:
+	adapter: mysql
+	database:redmine
+	host: localhost
+	username: redmineuser
+	password: redminepw
+	encoding: utf8
+	:wq
+    
+1. 创建mysql数据库
+	\# /usr/local/mysql/bin/mysql -u root -p
+	Mysql> create database redmine default character set utf8;
+	grant all on redmine.* to root;
+	grant all on redmine.* to root@localhost;
+	grant all on redmine.* to redmineuser;
+	grant all on redmine.* to redmineuser @localhost;
+	set password for redmineuser@localhost=password('redminpw');
+	Mysql>exit;
+    
+1. Remine设定
+	（注意此时的目录一定要在redmine/config里，不然会出错，本文后面有错误信息。）
+	\# rake db:migrate RAILS_ENV="production" //创建表
+	\# rake redmine:load_default_data RAILS_ENV="production" //加载默认配置
+	这里会要求选择默认语言，我选的中文zh：
+	Select language: bg, ca, cs, da, de, en, es, fi, fr, he, hu, it, ja, ko, lt, nl, no, pl, pt, pt-br, ro, ru, sk, sr, sv, th, tr, uk, vn, zh, zh-tw [en] zh
+	这个默认设置只是在未登录时的界面语言，当用户登录后，默认语言还是英语，在My account里可以修改成其它语言。
+
+1. 启动WEB服务
+	\# ruby script/server webrick -e production
+	或
+    \# ruby /usr/local/redmine/script/server webrick -e production
+
+1. 服务方式启动
+	\# ruby script/server webrick -e production -d
+	或
+    \# ruby /usr/local/redmine/script/server webrick -e production –d
+    
+1. 服务方式停止
+	（ps命令查出此进程的pid号，再杀掉，目前好像只能这样，我看了--help里面，还没有停止的参数。）
+	\# ps aux | grep ruby
+	\# kill -9 [PID]
+
+1. 其他
+	1. 停止web服务方法：在当前启动窗口按ctrl+C
+	1. 访问http://ip:3000/
+	1. 初始用户名/密码：admin/admin
