@@ -88,9 +88,6 @@ ubuntu上包括的包
 	1. 把插件复制到 #{RAILS_ROOT}/plugins (Redmine 2.x) or #{RAILS_ROOT}/vendor/plugins (Redmine 1.x) 目录下面。如果你要从 Github 下载插件，你也可以直接进入插件目录，执行下面一条命令：
 		git clone git://github.com/user_name/name_of_the_plugin.git
 	1. 如果插件需要数据迁移，执行以下命令来升级你的数据库（安全起见，事先备份一下数据库）
-		Redmine 1.x:
-			rake db:migrate_plugins RAILS_ENV=production
-		Redmine 2.x:
 			rake redmine:plugins:migrate RAILS_ENV=production
 	1. 重启Redmine
 		现在你可以在插件列表（管理 -> 插件）中看到刚安装的插件，如果插件需要配置，在这里可以对新插件进行配置。
