@@ -1,0 +1,10 @@
+addEventHandler默认参数表示只有在显示的页面中才会接收到事件，当没有显示的页面中需要接收事件的时候，要改变参数，举例如下：
+```javascript
+addEventHandler<UI_NTF_FLIGHT_UPDATED>(&MenuEquipmentInformationPage::initEquipmentInformationlData);
+```
+表示接收此事件的页面当前是显示的，用的是默认的plugin_ui_page_eh_scope_visible参数；
+但是当要接收事件的页面没有显示的时候，则为如下:
+```javascript
+addEventHandler<UI_NTF_FLIGHT_UPDATED>(&MenuEquipmentInformationPage::initEquipmentInformationlData,plugin_ui_page_eh_scope_all);
+```
+plugin_ui_page_eh_scope_all此参数表示所有的页面都会接收到事件
